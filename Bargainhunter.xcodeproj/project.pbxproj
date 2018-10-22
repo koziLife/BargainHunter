@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A449B7678DA5BDBF6523D666 /* Pods_Bargainhunter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3DE82A7BD180B4F6B4023 /* Pods_Bargainhunter.framework */; };
 		C710EE64217CB83400E44E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710EE63217CB83400E44E96 /* AppDelegate.swift */; };
 		C710EE66217CB83400E44E96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710EE65217CB83400E44E96 /* ViewController.swift */; };
 		C710EE69217CB83400E44E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C710EE67217CB83400E44E96 /* Main.storyboard */; };
@@ -14,9 +15,13 @@
 		C710EE6E217CB83500E44E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C710EE6C217CB83500E44E96 /* LaunchScreen.storyboard */; };
 		C71F6F9C217CDFAA0017043D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71F6F9B217CDFAA0017043D /* RoundButton.swift */; };
 		C71F6F9E217CE9820017043D /* WishCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71F6F9D217CE9820017043D /* WishCreateVC.swift */; };
+		C77A7367217E115100902ABB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A7366217E115100902ABB /* SecondViewController.swift */; };
+		C77A736F217E254C00902ABB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C77A736E217E254C00902ABB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D05C3DD83E5654F13830E71 /* Pods-Bargainhunter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bargainhunter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bargainhunter/Pods-Bargainhunter.debug.xcconfig"; sourceTree = "<group>"; };
+		90B2F864326C4EBC793F58F5 /* Pods-Bargainhunter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bargainhunter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bargainhunter/Pods-Bargainhunter.release.xcconfig"; sourceTree = "<group>"; };
 		C710EE60217CB83400E44E96 /* Bargainhunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bargainhunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C710EE63217CB83400E44E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C710EE65217CB83400E44E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +31,10 @@
 		C710EE6F217CB83500E44E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C71F6F9B217CDFAA0017043D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		C71F6F9D217CE9820017043D /* WishCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCreateVC.swift; sourceTree = "<group>"; };
+		C77A7364217E0F7900902ABB /* Bargainhunter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bargainhunter.entitlements; sourceTree = "<group>"; };
+		C77A7366217E115100902ABB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C77A736E217E254C00902ABB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CAF3DE82A7BD180B4F6B4023 /* Pods_Bargainhunter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bargainhunter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +42,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A449B7678DA5BDBF6523D666 /* Pods_Bargainhunter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C00A32543A4BC150A4813E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAF3DE82A7BD180B4F6B4023 /* Pods_Bargainhunter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3720FADBE2119F90075151EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D05C3DD83E5654F13830E71 /* Pods-Bargainhunter.debug.xcconfig */,
+				90B2F864326C4EBC793F58F5 /* Pods-Bargainhunter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C710EE57217CB83400E44E96 = {
 			isa = PBXGroup;
 			children = (
 				C710EE62217CB83400E44E96 /* Bargainhunter */,
 				C710EE61217CB83400E44E96 /* Products */,
+				3720FADBE2119F90075151EA /* Pods */,
+				2C00A32543A4BC150A4813E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +87,7 @@
 		C710EE62217CB83400E44E96 /* Bargainhunter */ = {
 			isa = PBXGroup;
 			children = (
+				C77A7364217E0F7900902ABB /* Bargainhunter.entitlements */,
 				C71F6F9A217CDF8D0017043D /* View */,
 				C710EE63217CB83400E44E96 /* AppDelegate.swift */,
 				C710EE65217CB83400E44E96 /* ViewController.swift */,
@@ -66,6 +96,8 @@
 				C710EE6C217CB83500E44E96 /* LaunchScreen.storyboard */,
 				C710EE6F217CB83500E44E96 /* Info.plist */,
 				C71F6F9D217CE9820017043D /* WishCreateVC.swift */,
+				C77A7366217E115100902ABB /* SecondViewController.swift */,
+				C77A736E217E254C00902ABB /* GoogleService-Info.plist */,
 			);
 			path = Bargainhunter;
 			sourceTree = "<group>";
@@ -85,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C710EE72217CB83500E44E96 /* Build configuration list for PBXNativeTarget "Bargainhunter" */;
 			buildPhases = (
+				E5CB9D575DBE325629A4BD88 /* [CP] Check Pods Manifest.lock */,
 				C710EE5C217CB83400E44E96 /* Sources */,
 				C710EE5D217CB83400E44E96 /* Frameworks */,
 				C710EE5E217CB83400E44E96 /* Resources */,
+				E8253D515059AA47BE781D80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -110,6 +144,11 @@
 				TargetAttributes = {
 					C710EE5F217CB83400E44E96 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,12 +176,66 @@
 			buildActionMask = 2147483647;
 			files = (
 				C710EE6E217CB83500E44E96 /* LaunchScreen.storyboard in Resources */,
+				C77A736F217E254C00902ABB /* GoogleService-Info.plist in Resources */,
 				C710EE6B217CB83500E44E96 /* Assets.xcassets in Resources */,
 				C710EE69217CB83400E44E96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E5CB9D575DBE325629A4BD88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bargainhunter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8253D515059AA47BE781D80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bargainhunter/Pods-Bargainhunter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bargainhunter/Pods-Bargainhunter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C710EE5C217CB83400E44E96 /* Sources */ = {
@@ -152,6 +245,7 @@
 				C71F6F9C217CDFAA0017043D /* RoundButton.swift in Sources */,
 				C71F6F9E217CE9820017043D /* WishCreateVC.swift in Sources */,
 				C710EE66217CB83400E44E96 /* ViewController.swift in Sources */,
+				C77A7367217E115100902ABB /* SecondViewController.swift in Sources */,
 				C710EE64217CB83400E44E96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,15 +388,18 @@
 		};
 		C710EE73217CB83500E44E96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D05C3DD83E5654F13830E71 /* Pods-Bargainhunter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Bargainhunter/Bargainhunter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R74NG6928G;
 				INFOPLIST_FILE = Bargainhunter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lebilabs.Bargainhunter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lebilabs.barhunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,15 +408,18 @@
 		};
 		C710EE74217CB83500E44E96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B2F864326C4EBC793F58F5 /* Pods-Bargainhunter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Bargainhunter/Bargainhunter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R74NG6928G;
 				INFOPLIST_FILE = Bargainhunter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lebilabs.Bargainhunter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lebilabs.barhunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
