@@ -8,6 +8,7 @@ target 'Bargainhunter' do
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
   pod 'Alamofire', '~> 4.7'
+  pod 'SwiftyJSON', '~> 4.0'
 
   # Pods for Bargainhunter
 

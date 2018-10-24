@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     var window: UIWindow?
     
+    
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let token = deviceToken.map{String(format: "%02.2hhx", $0)}.joined()
         print("token: \(token)")
@@ -47,31 +48,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         window?.rootViewController = second
         
-        if let rootViewController = window?.rootViewController as? SecondViewController {
-            rootViewController.loadText(text: alert)
-        }
+        let price = data["price"]
+        let outboundDate = data["outbound-date"]//"27 Oct 2018"
+        let outboundDeparture = data["outbound-departure"]//"LGW 09:15"
+        let outboundArrival = data["outbound-arrival"]//"AMS 11:25"
         
+        let inboundDate = data["inbound-date"]//"29 Oct 2018"
+        let inboundDeparture = data["inbound-departure"]//"AMS 07:05"
+        let inboundArrival = data["inbound-arrival"]//"LGW 07:20"
+        let bookId = data["book-id"]
+        if let rootViewController = window?.rootViewController as? SecondViewController {
+            
+            rootViewController.loadText(price: price as! String, outboundDate: outboundDate as! String, outboundDeparture: outboundDeparture as! String, outboundArrival: outboundArrival as! String, inboundDate: inboundDate as! String, inboundDeparture: inboundDeparture as! String, inboundArrival: inboundArrival as! String,
+                                        bookId: bookId as! String)
+        }
         
         completionHandler()
     }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        
+       
         UNUserNotificationCenter.current().delegate = self
-        
+
         UNUserNotificationCenter.current().requestAuthorization(options:
             [.alert, .badge, .sound], completionHandler: {(granted, error) in
                 print("granted: \(granted)")
         })
-        
+
         UIApplication.shared.registerForRemoteNotifications()
         
         return true
     }
     
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        print("did receive remote notification")
-    }
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

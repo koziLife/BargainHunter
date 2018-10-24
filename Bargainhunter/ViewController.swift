@@ -10,23 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var labelText : String!
+    //var labelText : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    func loadLabel(text: String) {
-        labelText = text
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = sender as? SecondViewController {
-            vc.loadText(text: labelText)
-        }
-        
-//        performSegue(withIdentifier: "To_Second", sender: nil)
-    }
+//    func loadLabel(text: String) {
+//        labelText = text
+//    }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let vc = sender as? SecondViewController {
+//            vc.loadText(text: labelText)
+//        }
+//
+////        performSegue(withIdentifier: "To_Second", sender: nil)
+//    }
 }
 
 extension UIViewController {

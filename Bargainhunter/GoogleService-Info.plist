@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>909696906174-9alofuo268ki2nmav03bii4d6mbrvd9l.apps.googleusercontent.com</string>
+	<string>934891688040-ck47k714oqgis6072c7aju64mvc6fvsh.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.909696906174-9alofuo268ki2nmav03bii4d6mbrvd9l</string>
+	<string>com.googleusercontent.apps.934891688040-ck47k714oqgis6072c7aju64mvc6fvsh</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBzFuFg2lFtcmi1iuPyYHKx4IgIMA1_wCs</string>
+	<string>AIzaSyC1-SWYOuTp331Qs-EEGeOmAywOPUENUIU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>909696906174</string>
+	<string>934891688040</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.lebilabs.helloPush</string>
+	<string>com.lebilabs.barhunter</string>
 	<key>PROJECT_ID</key>
-	<string>deneme-d2b1f</string>
+	<string>travix-development</string>
 	<key>STORAGE_BUCKET</key>
-	<string>deneme-d2b1f.appspot.com</string>
+	<string>travix-development.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:909696906174:ios:5feadc99ba1a84c3</string>
+	<string>1:934891688040:ios:caf8ac5ec9122a1e</string>
 	<key>DATABASE_URL</key>
-	<string>https://deneme-d2b1f.firebaseio.com</string>
+	<string>https://travix-development.firebaseio.com</string>
 </dict>
 </plist>

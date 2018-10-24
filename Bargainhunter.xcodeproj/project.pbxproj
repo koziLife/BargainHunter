@@ -16,7 +16,10 @@
 		C71F6F9C217CDFAA0017043D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71F6F9B217CDFAA0017043D /* RoundButton.swift */; };
 		C71F6F9E217CE9820017043D /* WishCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71F6F9D217CE9820017043D /* WishCreateVC.swift */; };
 		C77A7367217E115100902ABB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A7366217E115100902ABB /* SecondViewController.swift */; };
-		C77A736F217E254C00902ABB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C77A736E217E254C00902ABB /* GoogleService-Info.plist */; };
+		C77A7372217E926500902ABB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A7371217E926500902ABB /* Constants.swift */; };
+		C77A7375217E930000902ABB /* WishService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A7374217E930000902ABB /* WishService.swift */; };
+		C77A7377217EFED300902ABB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C77A7376217EFED300902ABB /* GoogleService-Info.plist */; };
+		C77A7379217F3F2C00902ABB /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A7378217F3F2C00902ABB /* BookService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +36,10 @@
 		C71F6F9D217CE9820017043D /* WishCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCreateVC.swift; sourceTree = "<group>"; };
 		C77A7364217E0F7900902ABB /* Bargainhunter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bargainhunter.entitlements; sourceTree = "<group>"; };
 		C77A7366217E115100902ABB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		C77A736E217E254C00902ABB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C77A7371217E926500902ABB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C77A7374217E930000902ABB /* WishService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishService.swift; sourceTree = "<group>"; };
+		C77A7376217EFED300902ABB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C77A7378217F3F2C00902ABB /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
 		CAF3DE82A7BD180B4F6B4023 /* Pods_Bargainhunter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bargainhunter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +93,8 @@
 		C710EE62217CB83400E44E96 /* Bargainhunter */ = {
 			isa = PBXGroup;
 			children = (
+				C77A7373217E92E800902ABB /* Services */,
+				C77A7370217E923700902ABB /* Utilities */,
 				C77A7364217E0F7900902ABB /* Bargainhunter.entitlements */,
 				C71F6F9A217CDF8D0017043D /* View */,
 				C710EE63217CB83400E44E96 /* AppDelegate.swift */,
@@ -97,7 +105,7 @@
 				C710EE6F217CB83500E44E96 /* Info.plist */,
 				C71F6F9D217CE9820017043D /* WishCreateVC.swift */,
 				C77A7366217E115100902ABB /* SecondViewController.swift */,
-				C77A736E217E254C00902ABB /* GoogleService-Info.plist */,
+				C77A7376217EFED300902ABB /* GoogleService-Info.plist */,
 			);
 			path = Bargainhunter;
 			sourceTree = "<group>";
@@ -108,6 +116,23 @@
 				C71F6F9B217CDFAA0017043D /* RoundButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C77A7370217E923700902ABB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C77A7371217E926500902ABB /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C77A7373217E92E800902ABB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C77A7374217E930000902ABB /* WishService.swift */,
+				C77A7378217F3F2C00902ABB /* BookService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C710EE6E217CB83500E44E96 /* LaunchScreen.storyboard in Resources */,
-				C77A736F217E254C00902ABB /* GoogleService-Info.plist in Resources */,
+				C77A7377217EFED300902ABB /* GoogleService-Info.plist in Resources */,
 				C710EE6B217CB83500E44E96 /* Assets.xcassets in Resources */,
 				C710EE69217CB83400E44E96 /* Main.storyboard in Resources */,
 			);
@@ -219,6 +244,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -228,6 +254,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,11 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77A7379217F3F2C00902ABB /* BookService.swift in Sources */,
+				C77A7375217E930000902ABB /* WishService.swift in Sources */,
 				C71F6F9C217CDFAA0017043D /* RoundButton.swift in Sources */,
 				C71F6F9E217CE9820017043D /* WishCreateVC.swift in Sources */,
 				C710EE66217CB83400E44E96 /* ViewController.swift in Sources */,
 				C77A7367217E115100902ABB /* SecondViewController.swift in Sources */,
 				C710EE64217CB83400E44E96 /* AppDelegate.swift in Sources */,
+				C77A7372217E926500902ABB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
